@@ -1,0 +1,20 @@
+[project]
+name = "github-explorer"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Jacob Klitgaard", email = "jacobklitgaardhansen@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "httpx>=0.28.1",
+    "streamlit>=1.66.1",
+]
+
+[project.scripts]
+github-explorer = "github_explorer:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
